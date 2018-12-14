@@ -1,5 +1,5 @@
 module.exports = {
-    "modules": true,
+    "modules": false,
     "plugins": {
         "autoprefixer": {
             "grid": true

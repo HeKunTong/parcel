@@ -5,7 +5,7 @@
   "repository": "https://github.com/HeKunTong/parcel.git",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html -p 1227 --open",
+    "start": "node pack/dev.js",
     "build": "parcel build index.html"
   },
   "devDependencies": {
@@ -16,6 +16,7 @@
     "postcss-modules": "^1.4.1"
   },
   "dependencies": {
+    "path": "^0.12.7",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   }

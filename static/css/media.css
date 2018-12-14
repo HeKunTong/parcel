@@ -1,0 +1,125 @@
+@media screen and (max-width: 800px) {
+    #app, body, html {
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .left-col {
+        display: none;
+    }
+
+    #header .header-nav, .mid-col {
+        position: relative;
+    }
+
+    .mid-col {
+        left: 0;
+    }
+
+    #mobile-nav {
+        display: block;
+    }
+
+    #mobile-nav .overlay {
+        height: 110px;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        background: #4d4d4d;
+    }
+
+    .btnctn {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        top: -5px;
+        z-index: 4;
+    }
+
+    .btnctn .slider-trigger.list {
+        bottom: 0;
+        left: 0;
+    }
+
+    .btnctn .slider-trigger {
+        position: absolute;
+        z-index: 101;
+        width: 42px;
+        height: 42px;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .btnctn .slider-trigger .icon {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    #mobile-nav #header {
+        padding: 10px 0 0;
+    }
+
+    #mobile-nav #header .profilepic {
+        display: block;
+        position: relative;
+        z-index: 100;
+    }
+
+    .profilepic {
+        border: 5px solid #fff;
+        border-radius: 300px;
+        width: 128px;
+        height: 128px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        background: #88acdb;
+        -webkit-transition: all .2s ease-in;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        text-align: center;
+    }
+
+    #mobile-nav .header-author {
+        margin: 0;
+        position: relative;
+        z-index: 2;
+        color: #424242;
+    }
+
+    .header-author {
+        text-align: center;
+        margin: .67em 0;
+        font-family: Roboto,serif;
+        font-size: 30px;
+        transition: .3s;
+    }
+
+    .header-subtitle {
+        text-align: center;
+        color: #999;
+        font-size: 14px;
+        line-height: 25px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        padding: 0 24px;
+    }
+
+    .header-subtitle .icon {
+        margin: 0 10px;
+        color: #d0d0d0;
+    }
+
+    .header-menu {
+        height: auto;
+        margin: 10px 0 20px;
+    }
+
+}
+

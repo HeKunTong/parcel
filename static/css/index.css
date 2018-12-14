@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eaeaea;
+}
+
+body, button, input, select, textarea {
+    color: #1a1a1a;
+    font-family: lucida grande,lucida sans unicode,lucida,helvetica,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+h1, h2, h3 {
+    line-height: 2;
+    font-weight: 400;
+}
+
+ol, ul {
+    list-style: none outside none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    color: #08c;
+}
+
+a:hover {
+    opacity: 0.6;
+}
