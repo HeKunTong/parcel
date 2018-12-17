@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import userLog from '../static/img/userLogo.png';
 
 class App extends Component {
 
@@ -11,7 +10,7 @@ class App extends Component {
                     <div className="intrude-less">
                         <header id="header" className="inner">
                             <a href="/" className="profilepic">
-                                <img src={userLog} className="js-avatar"/>
+                                <img src="/static/img/userLogo.png" className="js-avatar"/>
                             </a>
                             <h1 className="header-author"><a href="/">Litten</a></h1>
                             <p className="header-subtitle">胆小认生，不易相处</p>
