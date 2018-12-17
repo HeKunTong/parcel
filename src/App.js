@@ -28,7 +28,7 @@ class App extends Component {
                             <div className="menu-l">
                                 <div id="js-content" className="content-ll">
                                     <Route exact path="/" component={Home} />
-                                    <Route exact path="/article/:id(/\d+/)" component={Article} />
+                                    <Route exact path="/article/:id(\d+)" component={Article} />
                                 </div>
                             </div>
                         </div>

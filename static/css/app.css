@@ -394,3 +394,27 @@ body {
     float: right;
 }
 
+.article-inner h4 {
+    letter-spacing: .140625em;
+    text-transform: uppercase;
+}
+
+.article-inner h4, .article-inner h5, .article-inner h6 {
+    font-size: 1rem;
+    line-height: 1.3125;
+    margin-top: 3.5em;
+    margin-bottom: 1.75em;
+}
+
+.article-entry li code, .article-entry p code {
+    padding: 1px 3px;
+    margin: 0 3px;
+    background: #ddd;
+    border: 1px solid #ccc;
+    font-family: Menlo,Monaco,Andale Mono,lucida console,Courier New,monospace;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+
+
