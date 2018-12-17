@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Left, Footer } from './components';
-import { Article, Home } from './page';
+import { ArticleDetail, Home } from './page';
 
 class App extends Component {
 
@@ -28,7 +28,7 @@ class App extends Component {
                             <div className="menu-l">
                                 <div id="js-content" className="content-ll">
                                     <Route exact path="/" component={Home} />
-                                    <Route exact path="/article/:id(\d+)" component={Article} />
+                                    <Route exact path="/article/:id(\d+)" component={ArticleDetail} />
                                 </div>
                             </div>
                         </div>

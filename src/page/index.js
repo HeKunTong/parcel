@@ -1,7 +1,7 @@
-import Article from './article';
+import ArticleDetail from './article';
 import Home from './home';
 
 export {
-    Article,
+    ArticleDetail,
     Home
 };

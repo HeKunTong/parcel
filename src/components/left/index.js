@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 import userLogo from '/static/img/userLogo.png';
 
 class Left extends Component {
@@ -15,7 +16,7 @@ class Left extends Component {
                         <p className="header-subtitle">胆小认生，不易相处</p>
                         <nav className="header-menu">
                             <ul>
-                                <li><a href="/">主页</a></li>
+                                <li><Link to="/">主页</Link></li>
                                 <li><a href="/photos">相册</a></li>
                             </ul>
                         </nav>
