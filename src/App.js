@@ -2,9 +2,23 @@ import React, { Component } from 'react';
 
 class App extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            height: 500
+        };
+    }
+
+    componentWillMount() {
+        const height = document.body.clientHeight;
+        console.log(height);
+        this.setState({height});
+    }
+
     render() {
+        const { height } = this.state;
         return (
-            <div id="container">
+            <div id="container" style={{ height }}>
                 <div className="left-col">
                     <div className="overlay" style={{background: "#4d4d4d"}}/>
                     <div className="intrude-less">
