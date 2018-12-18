@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import { Article } from '../../components';
+import { Article, ArticleNav, Comment } from '../../components';
 
 class ArticleDetail extends Component {
     render() {
         return (
-            <Article show={true}/>
+            <div>
+                <Article show={true}/>
+                <ArticleNav/>
+                <Comment />
+            </div>
         )
     }
 }
