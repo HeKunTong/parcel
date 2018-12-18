@@ -11,8 +11,22 @@ class Comment extends Component {
         };
     }
 
-    onShow = () => {
-        this.setState({show: true});
+    componentWillMount() {
+        document.addEventListener("click", (e) => {
+            const dom = e.target;
+            const btn = document.querySelector(".function-face-w");
+            const faceBox = document.querySelector(".face-wrapper-dw");
+            const { show } = this.state;
+            if (show) {
+                if (!faceBox.contains(dom)) {
+                    this.setState({show: false});
+                }
+            } else {
+                if (btn.contains(dom)) {
+                    this.setState({show: true});
+                }
+            }
+        });
     }
 
     onChange = (e) => {
@@ -56,7 +70,7 @@ class Comment extends Component {
                                             <div className="clear-g wrap-action-w">
                                                 <div className="action-function-w">
                                                     <ul className="clear-g">
-                                                        <li node-type="function-face" className="function-face-w" onClick={this.onShow}>
+                                                        <li node-type="function-face" className="function-face-w">
                                                             <a className="effect-w"><i className="face-b"/></a>
                                                         </li>
                                                     </ul>
