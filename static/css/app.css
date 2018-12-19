@@ -764,104 +764,112 @@ body {
     background: #f0f0f0;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_01 {
-    background-position: -2px -2px;
+.face-item.face_01 {
+    background-position: -2px -2px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_02 {
-    background-position: -2px -24px;
+.face-item.face_02 {
+    background-position: -2px -24px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_03 {
-    background-position: -1px -49px;
+.face-item.face_03 {
+    background-position: -1px -49px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_04 {
-    background-position: -2px -73px;
+.face-item.face_04 {
+    background-position: -2px -73px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_05 {
-    background-position: -2px -97px;
+.face-item.face_05 {
+    background-position: -2px -97px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_06 {
-    background-position: -2px -121px;
+.face-item.face_06 {
+    background-position: -2px -121px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_07 {
-    background-position: -2px -145px;
+.face-item.face_07 {
+    background-position: -2px -145px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_08 {
-    background-position: -2px -168px;
+.face-item.face_08 {
+    background-position: -2px -168px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_09 {
-    background-position: -2px -192px;
+.face-item.face_09 {
+    background-position: -2px -192px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_10 {
-    background-position: -2px -215px;
+.face-item.face_10 {
+    background-position: -2px -215px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_11 {
-    background-position: -2px -238px;
+.face-item.face_11 {
+    background-position: -2px -238px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_12 {
-    background-position: -2px -260px;
+.face-item.face_12 {
+    background-position: -2px -260px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_13 {
-    background-position: -2px -284px;
+.face-item.face_13 {
+    background-position: -2px -284px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_14 {
-    background-position: -2px -307px;
+.face-item.face_14 {
+    background-position: -2px -307px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_15 {
-    background-position: -2px -331px;
+.face-item.face_15 {
+    background-position: -2px -331px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_16 {
-    background-position: -2px -355px;
+.face-item.face_16 {
+    background-position: -2px -355px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_17 {
-    background-position: -2px -378px;
+.face-item.face_17 {
+    background-position: -2px -378px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_18 {
-    background-position: -2px -401px;
+.face-item.face_18 {
+    background-position: -2px -401px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_19 {
-    background-position: -2px -425px;
+.face-item.face_19 {
+    background-position: -2px -425px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_20 {
-    background-position: -2px -445px;
+.face-item.face_20 {
+    background-position: -2px -445px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_21 {
-    background-position: -2px -465px;
+.face-item.face_21 {
+    background-position: -2px -465px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_22 {
-    background-position: -2px -488px;
+.face-item.face_22 {
+    background-position: -2px -488px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_23 {
-    background-position: -2px -511px;
+.face-item.face_23 {
+    background-position: -2px -511px !important;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-box .face-item.face_24 {
-    background-position: -2px -535px;
+.face-item.face_24 {
+    background-position: -2px -535px !important;
 }
 
 #SOHUCS #SOHU_MAIN .module-cmt-box .face-item {
     background: url("/static/img/face-map.png") no-repeat center;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-list .face-item, .module-cy-user-page .face-item {
+    background: url("/static/img/face-map.png") no-repeat center;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
 }
 
 #SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w .wrap-action-w .action-function-w .face-wrapper-dw .action-face-tab-dw {
@@ -1156,4 +1164,20 @@ body {
     font-size: 16px;
     font-family: "Microsoft YaHei";
     color: #4398ed;
+}
+
+
+#SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw .icon-name-bg {
+    padding: 0 0 0 4px;
+    font-family: Arial;
+    position: relative;
+    top: 3px;
+    color: #999;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span.click-prop-gw span.prop-span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: -5px;
 }
