@@ -139,13 +139,6 @@ Comment.defaultProps = {
             name: "闰土在流浪",
             address: "江苏省扬州市",
             source: "网友",
-            awesome: [{
-                left: 150,
-                top: 17
-            }, {
-                left: 188,
-                top: 44
-            }],
             info: "请教一下，畅言必须要有ICP备案才能用，那用hexo+GitHub搭建的博客该怎么办呢",
             star: 1
         },
