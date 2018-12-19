@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { resolveFace } from '../../util';
-import map from 'lodash/map';
 
 class CommentItem extends Component {
     render() {
