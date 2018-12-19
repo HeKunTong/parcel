@@ -1127,6 +1127,10 @@ body {
     display: none;
 }
 
+#SOHUCS #SOHU_MAIN .module-cmt-list .block-cont-gw:hover .action-click-gw .click-report-gw{
+    display: inline-block;
+}
+
 #SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span a {
     color: #999;
     cursor: pointer;
