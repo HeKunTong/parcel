@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Left, Footer } from './components';
-import { ArticleDetail, Home } from './page';
-import { Router, Route, browserHistory, render, model as registerModel } from 'mirrorx';
-import models from './models';
+import { ArticleDetail, Home, Test } from './page';
+import { connect } from 'react-redux';
 
 class App extends Component {
 
@@ -14,18 +14,15 @@ class App extends Component {
     }
 
     componentWillMount() {
-        models.forEach(model => {
-            registerModel(model);
-        });
-        render();
         const height = document.body.clientHeight;
         this.setState({height});
     }
 
     render() {
+        const { collapsed } = this.props;
         const { height } = this.state;
         return (
-            <Router history={browserHistory}>
+            <Router>
                 <div>
                     <div id="container" style={{ height }}>
                         <Left />
@@ -35,17 +32,22 @@ class App extends Component {
                                     <div id="js-content" className="content-ll">
                                         <Route exact path="/" component={Home} />
                                         <Route exact path="/article/:id(\d+)" component={ArticleDetail} />
+                                        <Route exact path="/test" component={Test} />
                                     </div>
                                 </div>
                             </div>
                             <Footer />
                         </div>
                     </div>
-                    <div className="cy-mask" style={{ height }}/>
+                    {
+                        collapsed &&
+                        <div className="cy-mask" style={{ height }}/>
+                    }
                 </div>
             </Router>
         );
     }
 }
 
-export default App;
+
+export default connect(({ collapsed }) => ({ collapsed }))(App);

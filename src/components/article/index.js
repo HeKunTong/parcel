@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'mirrorx';
+import { Link } from 'react-router-dom';
 import map from 'lodash/map';
 
 class Article extends Component {
     render() {
-
         const { article, show } = this.props;
-
         return (
             <article className="article article-type-post article-index">
                 <div className="article-inner">

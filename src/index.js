@@ -1,6 +1,12 @@
 import React from 'react';
-import { render } from 'mirrorx';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 import App from './App';
 
 const dom = document.getElementById('app');
-render(<App />, dom);
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+dom);

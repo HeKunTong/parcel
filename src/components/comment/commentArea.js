@@ -12,21 +12,23 @@ class CommentArea extends Component {
     }
 
     componentWillMount() {
-        document.addEventListener("click", (e) => {
-            const dom = e.target;
-            const btn = document.querySelector(".function-face-w");
-            const faceBox = document.querySelector(".face-wrapper-dw");
-            const { show } = this.state;
-            if (show) {
-                if (!faceBox.contains(dom)) {
-                    this.setState({show: false});
-                }
-            } else {
-                if (btn.contains(dom)) {
-                    this.setState({show: true});
-                }
+        document.addEventListener("click", this.resolve());
+    }
+
+    resolve = () => (e) => {
+        const dom = e.target;
+        const btn = document.querySelector(".function-face-w");
+        const faceBox = document.querySelector(".face-wrapper-dw");
+        const { show } = this.state;
+        if (show) {
+            if (faceBox && !faceBox.contains(dom)) {
+                this.setState({show: false});
             }
-        });
+        } else {
+            if (btn && btn.contains(dom)) {
+                this.setState({show: true});
+            }
+        }
     }
 
     onChange = (e) => {
