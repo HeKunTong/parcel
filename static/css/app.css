@@ -1131,9 +1131,16 @@ body {
     display: inline-block;
 }
 
-#SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span a {
+#SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .article-inner h3.action-click-gw span a {
     color: #999;
     cursor: pointer;
+}
+
+.article-inner h3 {
+    font-size: 1.1875rem;
+    line-height: 1.1052631579;
+    margin-top: 2.9473684211em;
+    margin-bottom: 1.4736842105em;
 }
 
 #SOHUCS #SOHU_MAIN .module-cmt-list .wrap-action-gw .action-click-gw span a .icon-flag {
