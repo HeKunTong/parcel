@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from 'mirrorx';
 import userLogo from '/static/img/userLogo.png';
 
 class Left extends Component {

@@ -39,14 +39,38 @@ class CommentArea extends Component {
 
     render() {
 
+        const { user } = this.props;
         const { show, value } = this.state;
 
         return (
             <div className="module-cmt-header">
+                {
+                    user &&
+                    <div className="clear-g section-title-w">
+                        <div className="title-user-w">
+                            <div className="clear-g user-wrap-w user-login">
+                                <span className="wrap-name-w">{user.name}：</span>
+                            </div>
+                        </div>
+                    </div>
+                }
                 <div className="section-cbox-w">
                     <div className="cbox-block-w clear-g">
                         <div className="block-head-w block-head-login">
-                            <div className="header-login">登录</div>
+                            {
+                                user &&
+                                <div className="head-img-w">
+                                    <a>
+                                        <img src={user.avatar} alt=""/>
+                                    </a>
+                                </div>
+                            }
+                            {
+                                !user &&
+                                <div className="block-head-w block-head-login">
+                                    <div className="header-login">登录</div>
+                                </div>
+                            }
                         </div>
                         <div className="block-post-w">
                             <div className="module-cmt-box">
@@ -56,7 +80,7 @@ class CommentArea extends Component {
                                     <div className="post-wrap-main">
                                         <div className="post-wrap-border-t">
                                             <div className="post-wrap-border-t-l"/>
-                                            <div className="post-wrap-border-t-r"/>
+                                            <div className="post-wrap-border-t-r" style={{marginLeft: "125px"}}/>
                                         </div>
                                         <div className="wrap-area-w">
                                             <div className="area-textarea-w">

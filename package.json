@@ -24,11 +24,11 @@
     "http2": "^3.3.7",
     "left": "^1.0.2",
     "lodash": "^4.17.11",
+    "mirrorx": "^0.2.12",
     "moment": "^2.23.0",
     "path": "^0.12.7",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-router-dom": "^4.3.1",
+    "react-dom": "^16.7.0",
     "superagent": "^4.0.0"
   }
 }

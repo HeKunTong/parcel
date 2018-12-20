@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'mirrorx';
 import map from 'lodash/map';
 
 class Article extends Component {
@@ -8,7 +8,7 @@ class Article extends Component {
         const { article, show } = this.props;
 
         return (
-            <article id="post-prevent-spiders" className="article article-type-post  article-index" itemScope="" itemProp="blogPost">
+            <article className="article article-type-post article-index">
                 <div className="article-inner">
                     <header className="article-header">
                         {
@@ -39,7 +39,7 @@ class Article extends Component {
                             <ul className="article-tag-list">
                                 {
                                     map(article.belong, (belong, index) => (
-                                        <li className="article-tag-list-item">
+                                        <li className="article-tag-list-item" key={index}>
                                             <a className="js-tag article-tag-list-link color3">{belong.name}</a>
                                         </li>
                                     ))

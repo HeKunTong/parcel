@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'mirrorx';
 import App from './App';
 
 const dom = document.getElementById('app');
-ReactDOM.render(<App />, dom);
+render(<App />, dom);

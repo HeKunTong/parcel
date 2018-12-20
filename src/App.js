@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Left, Footer } from './components';
 import { ArticleDetail, Home } from './page';
+import { Router, Route, browserHistory, render, model as registerModel } from 'mirrorx';
+import models from './models';
 
 class App extends Component {
 
@@ -13,6 +14,10 @@ class App extends Component {
     }
 
     componentWillMount() {
+        models.forEach(model => {
+            registerModel(model);
+        });
+        render();
         const height = document.body.clientHeight;
         this.setState({height});
     }
@@ -20,20 +25,23 @@ class App extends Component {
     render() {
         const { height } = this.state;
         return (
-            <Router>
-                <div id="container" style={{ height }}>
-                    <Left />
-                    <div className="mid-col">
-                        <div id="wrapper" className="body-wrap">
-                            <div className="menu-l">
-                                <div id="js-content" className="content-ll">
-                                    <Route exact path="/" component={Home} />
-                                    <Route exact path="/article/:id(\d+)" component={ArticleDetail} />
+            <Router history={browserHistory}>
+                <div>
+                    <div id="container" style={{ height }}>
+                        <Left />
+                        <div className="mid-col">
+                            <div id="wrapper" className="body-wrap">
+                                <div className="menu-l">
+                                    <div id="js-content" className="content-ll">
+                                        <Route exact path="/" component={Home} />
+                                        <Route exact path="/article/:id(\d+)" component={ArticleDetail} />
+                                    </div>
                                 </div>
                             </div>
+                            <Footer />
                         </div>
-                        <Footer />
                     </div>
+                    <div className="cy-mask" style={{ height }}/>
                 </div>
             </Router>
         );

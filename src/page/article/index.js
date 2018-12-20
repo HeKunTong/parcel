@@ -8,7 +8,7 @@ class ArticleDetail extends Component {
 
         return (
             <div>
-                <Article article={article} show={true}/>
+                <Article article={article} show={true} key={article.id}/>
                 <ArticleNav/>
                 <Comment />
             </div>

@@ -6,7 +6,7 @@ class Home extends Component {
     render() {
         const { articles } = this.props;
         return (
-            map(articles, (article, index) => <Article article={article} key={index}/>)
+            map(articles, article => <Article article={article} key={article.id}/>)
         );
     }
 }

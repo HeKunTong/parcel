@@ -1192,3 +1192,57 @@ body {
     display: inline-block;
     vertical-align: -5px;
 }
+
+#SOHUCS #SOHU_MAIN .module-cmt-header .section-cbox-w .head-img-w {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 9px;
+    top: 22px;
+    z-index: 11;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-header .section-cbox-w .head-img-w img {
+    border-radius: 42px;
+    display: block;
+    height: 42px;
+    width: 42px;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-header .section-title-w {
+    position: relative;
+    z-index: 12;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-header .section-title-w .title-user-w .user-wrap-w {
+    position: absolute;
+    top: 52px;
+    left: 55px;
+    text-indent: 11px;
+    z-index: 10;
+    padding-right: 10px;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-header .section-title-w .title-user-w .user-wrap-w .wrap-name-w {
+    font-size: 16px;
+    color: #4398ed;
+    font-family: "Microsoft YaHei";
+    position: relative;
+    z-index: 2;
+    text-indent: 11px;
+}
+
+.textarea-fw::-webkit-input-placeholder {
+   color: #bfbfbf;
+}
+
+.cy-mask {
+    width: 100%;
+    background: #000;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    position: fixed;
+    z-index: 2147483639;
+    top: 0;
+    left: 0;
+}

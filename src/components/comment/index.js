@@ -7,11 +7,11 @@ import map from 'lodash/map';
 class Comment extends Component {
 
     render() {
-        const { comment } = this.props;
+        const { comment, user } = this.props;
         return (
             <div id="SOHUCS">
                 <div id="SOHU_MAIN">
-                    <CommentArea />
+                    <CommentArea user={user}/>
                     <div className="module-cmt-list section-list-w">
                         <div className="cmt-list-type">
                             <ul className="clear-g type-lists">
@@ -19,8 +19,7 @@ class Comment extends Component {
                             </ul>
                             <div className="cmt-list-border"/>
                             <div className="cmt-list-number">
-                                <span className="comment-number"><span className="cy-number">51</span>人参与,<span
-                                    className="cy-number">51</span>条评论</span>
+                                <span className="comment-number"><span className="cy-number">51</span>人参与,<span className="cy-number">51</span>条评论</span>
                             </div>
                         </div>
                         <div className="list-block-gw list-hot-w">
@@ -43,6 +42,10 @@ class Comment extends Component {
 }
 
 Comment.defaultProps = {
+    user: {
+        avatar: "http://sucimg.itc.cn/avatarimg/10106078459859_1545038887446_c55",
+        name: "blank",
+    },
     comment: {
         hot: {
             avatar: "http://sucimg.itc.cn/avatarimg/849787402_1501140758502_c55",
