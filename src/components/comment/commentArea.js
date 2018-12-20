@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Face from '../face';
+import { connect } from 'react-redux';
+import collapsed from '../../redux/actions/collapsed';
 
 class CommentArea extends Component {
 
@@ -39,6 +41,11 @@ class CommentArea extends Component {
         this.setState({value: this.state.value + value});
     }
 
+    handleShow = () => {
+        const { show } = this.props;
+        show();
+    }
+
     render() {
 
         const { user } = this.props;
@@ -62,9 +69,7 @@ class CommentArea extends Component {
                             {
                                 user &&
                                 <div className="head-img-w">
-                                    <a>
-                                        <img src={user.avatar} alt=""/>
-                                    </a>
+                                    <img src={user.avatar} alt="" onClick={this.handleShow}/>
                                 </div>
                             }
                             {
@@ -123,4 +128,4 @@ class CommentArea extends Component {
     }
 }
 
-export default CommentArea;
+export default connect(null, collapsed)(CommentArea);

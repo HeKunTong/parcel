@@ -1207,6 +1207,7 @@ body {
     display: block;
     height: 42px;
     width: 42px;
+    cursor: pointer;
 }
 
 #SOHUCS #SOHU_MAIN .module-cmt-header .section-title-w {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Left, Footer } from './components';
+import { Left, Footer, User } from './components';
 import { ArticleDetail, Home, Test } from './page';
 import { connect } from 'react-redux';
 
@@ -42,6 +42,10 @@ class App extends Component {
                     {
                         collapsed &&
                         <div className="cy-mask" style={{ height }}/>
+                    }
+                    {
+                        collapsed &&
+                        <User />
                     }
                 </div>
             </Router>

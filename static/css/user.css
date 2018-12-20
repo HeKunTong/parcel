@@ -1,0 +1,321 @@
+.module-cy-user-page {
+    width: 710px;
+    position: fixed;
+    z-index: 2147483640;
+    top: 0;
+    zoom: 1;
+    font-family: "Microsoft YaHei";
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    border: 0;
+    font-weight: 400;
+    text-align: left;
+    height: auto;
+    overflow: visible;
+    font-size: 12px;
+    color: #333;
+    background-color: transparent;
+    line-height: 1;
+}
+
+.module-cy-user-page .cy-user-page-main {
+    float: right;
+    background: #FFF;
+    width: 630px;
+    height: 100%;
+    position: relative;
+}
+
+.module-cy-user-page .module-cy-user-info {
+    height: 100%;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-info-header {
+    padding: 20px;
+    height: 84px;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-info-header .cy-user-photo-container {
+    position: relative;
+    width: 84px;
+    height: 84px;
+    float: left;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-info-header .cy-user-photo {
+    width: 84px;
+    height: 84px;
+    display: block;
+    float: left;
+    border-radius: 3px;
+}
+
+.module-cy-user-page img {
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-info-header .avatar-mask {
+    width: 84px;
+    height: 84px;
+    background: #000;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    position: absolute;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+    display: none;
+    line-height: 84px;
+    font-size: 16px;
+    text-align: center;
+    color: #FFF;
+    font-family: "Microsoft YaHei";
+    cursor: pointer;
+}
+
+.module-cy-user-page * {
+    box-sizing: content-box;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-info-header .cy-user-info {
+    float: left;
+    width: 505px;
+    height: 84px;
+    position: relative;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-info-header .cy-user-info .cy-user-info-txt {
+    margin-left: 21px;
+    margin-top: 14px;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-info-header .cy-user-info .cy-user-info-txt .cy-user-name {
+    color: #111;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-info-header .cy-user-info .cy-user-info-txt .cy-user-name-input {
+    color: #111;
+    border: 1px solid #d5d5d5;
+    border-radius: 7px;
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    font-family: "Microsoft YaHei";
+    font-style: normal;
+    letter-spacing: 1px;
+    text-indent: 8px;
+    width: 150px;
+    display: none;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-info-header .cy-user-info .cy-user-info-txt .cy-user-edit {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    dispaly: inline;
+    zoom: 1;
+    background: url("/static/img/edit.png") no-repeat;
+    vertical-align: -2px;
+    margin: 0 0 0 12px;
+    cursor: pointer;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-info-header .cy-user-info .cy-user-info-txt .cy-user-edit-btn {
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: 2px;
+    display: none;
+    *zoom: 1;
+    background-color: #51acf9;
+    color: #fff;
+    margin: 0 0 0 12px;
+    cursor: pointer;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-sex {
+    width: 100px;
+    text-align: center;
+    display: inline;
+    position: absolute;
+    top: 11px;
+    right: 0;
+    zoom: 1;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-sex .cy-user-sex-gender-1-age-1980 {
+    background: url("/static/img/boy-80.png") no-repeat;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-sex .cy-user-sex-gender {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-sex .cy-user-sex-age {
+    margin: 0 0 8px;
+    font-size: 12px;
+    font-family: microsoft yahei;
+    color: #999;
+    vertical-align: middle;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-sex .cy-user-sex-update {
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #38a3fd;
+    border-radius: 20px;
+    color: #38a3fd;
+    font-size: 16px;
+    display: none;
+    cursor: pointer;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my {
+    position: relative;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-label {
+    border-bottom: 1px solid #c3cad4;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-label li {
+    width: 210px;
+    float: left;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-label li.active .cy-my-label-item {
+    color: #38a3fd;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-label li .cy-my-label-item {
+    width: 84px;
+    margin: 0 auto;
+    height: 28px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    line-height: 15px;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-label li.active .cy-my-label-item .cy-num {
+    color: #38a3fd;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-label li .cy-my-label-item .cy-num {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #333;
+    font-style: normal;
+}
+
+.module-cy-user-page .cy-user-page-tab {
+    width: 43px;
+    background: #111;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+.module-cy-user-page .cy-tab-list {
+    margin-top: 7px;
+    overflow: hidden;
+}
+
+.module-cy-user-page .cy-tab-list li {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 23px;
+    clear: none;
+    display: list-item;
+}
+
+.module-cy-user-page .cy-tab-list li.active .cy-my-ico, .module-cy-user-page .cy-tab-list li:hover .cy-tab-icon {
+    background: url("/static/img/tab-list-icon-active1.png");
+}
+
+.module-cy-user-page .cy-tab-list li .cy-tab-icon {
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+    display: block;
+    background: url("/static/img/tab-list-icon1.png");
+}
+
+.module-cy-user-page .cy-tab-list li.active i {
+    color: #38a3fd;
+}
+
+.module-cy-user-page .cy-tab-list li i {
+    width: 100%;
+    display: block;
+    margin-top: 2px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    font-style: normal;
+}
+
+.module-cy-user-page .module-cmt-notice-dot {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    width: 6px;
+    height: 6px;
+    background-color: #F74F4F;
+    border-radius: 6px;
+}
+
+.module-cy-user-page .cy-tab-list li.active .cy-task-ico, .module-cy-user-page .cy-tab-list li.task-li:hover .cy-task-ico {
+    background: url("/static/img/task-ico-active.png");
+}
+
+.module-cy-user-page .cy-tab-list li .cy-tab-icon {
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+    display: block;
+    background: url("/static/img/task-ico.png");
+}
+
+.module-cy-user-page .cy-user-page-close-btn {
+    cursor: pointer;
+    background: url("/static/img/close-btn.png");
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 15px;
+}
+
+.module-cy-user-page:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+
+
+
+
+
+
+

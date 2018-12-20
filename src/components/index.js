@@ -4,6 +4,7 @@ import Comment from './comment';
 import Face from './face';
 import Footer from './footer';
 import Left from './left';
+import User from './user';
 
 export {
     Article,
@@ -11,5 +12,6 @@ export {
     Comment,
     Face,
     Footer,
-    Left
+    Left,
+    User
 };
