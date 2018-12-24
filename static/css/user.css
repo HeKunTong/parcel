@@ -301,7 +301,7 @@
     background: url("/static/img/task-ico-active.png");
 }
 
-.module-cy-user-page .cy-tab-list li .cy-tab-icon {
+.module-cy-user-page .cy-tab-list li .cy-task-ico {
     background: url("/static/img/task-ico.png");
 }
 
@@ -363,6 +363,14 @@
 
 .module-cy-user-page .clear-g {
     zoom: 1;
+}
+
+.module-cy-user-page .clear-g:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
 }
 
 .module-cy-user-page li {
@@ -595,6 +603,75 @@
     position: relative;
     top: 0;
     left: 0;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-tab-active-bar {
+    position: absolute;
+    background: #38a3fd;
+    width: 84px;
+    height: 2px;
+    margin-left: 63px;
+    margin-top: -2px;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-page-container {
+    position: relative;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 630px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-page .cy-my-comment-list {
+    width: 575px;
+    margin: 20px 0 0 20px;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-page .cy-my-comment-list .empty-hold-place {
+    display: block;
+    text-align: center;
+    line-height: 16px;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    width: 345px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-page .cy-my-comment-list .empty-hold-place .pet-pic {
+    margin-top: 100px;
+    width: 345px;
+    height: 293px;
+    background: url("/static/img/notice-empty.png");
+    background-repeat: no-repeat;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-page .cy-my-comment-list .empty-hold-place .comment-empty-txt {
+    background-image: url("/static/img/title-nocomment.png");
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-page .cy-my-comment-list .empty-hold-place .empty-txt {
+    width: 345px;
+    height: 22px;
+    margin-top: 70px;
+    background-repeat: no-repeat;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-page .cy-my-comment-list .empty-hold-place .reply-empty-txt {
+    background-image: url("/static/img/title-noreply.png");
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-page .cy-my-comment-list .empty-hold-place .power-by-cy-txt {
+    width: 345px;
+    height: 16px;
+    background: url("/static/img/power-by.png");
+    background-repeat: no-repeat;
+    margin-top: 30px;
 }
 
 .module-cy-user-notice .notice-info {
