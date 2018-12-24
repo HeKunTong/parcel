@@ -114,15 +114,12 @@
     letter-spacing: 1px;
     text-indent: 8px;
     width: 150px;
-    display: none;
 }
 
 .module-cy-user-page .module-cy-user-info .cy-user-info-header .cy-user-info .cy-user-info-txt .cy-user-edit {
     width: 20px;
     height: 20px;
     display: inline-block;
-    dispaly: inline;
-    zoom: 1;
     background: url("/static/img/edit.png") no-repeat;
     vertical-align: -2px;
     margin: 0 0 0 12px;
@@ -135,13 +132,11 @@
     line-height: 28px;
     border-radius: 5px;
     text-align: center;
-    vertical-align: 2px;
-    display: none;
-    *zoom: 1;
     background-color: #51acf9;
     color: #fff;
     margin: 0 0 0 12px;
     cursor: pointer;
+    display: inline-block;
 }
 
 .module-cy-user-page .module-cy-user-info .cy-user-sex {
@@ -151,11 +146,14 @@
     position: absolute;
     top: 11px;
     right: 0;
-    zoom: 1;
 }
 
 .module-cy-user-page .module-cy-user-info .cy-user-sex .cy-user-sex-gender-1-age-1980 {
     background: url("/static/img/boy-80.png") no-repeat;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-sex:hover .cy-user-sex-gender-1-age-1980 {
+    display: none;
 }
 
 .module-cy-user-page .module-cy-user-info .cy-user-sex .cy-user-sex-gender {
@@ -166,11 +164,15 @@
 }
 
 .module-cy-user-page .module-cy-user-info .cy-user-sex .cy-user-sex-age {
-    margin: 0 0 8px;
+    margin: 0 0 8px 8px;
     font-size: 12px;
     font-family: microsoft yahei;
     color: #999;
     vertical-align: middle;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-sex:hover .cy-user-sex-age {
+    display: none;
 }
 
 .module-cy-user-page .module-cy-user-info .cy-user-sex .cy-user-sex-update {
@@ -185,6 +187,10 @@
     font-size: 16px;
     display: none;
     cursor: pointer;
+}
+
+.module-cy-user-page .module-cy-user-info .cy-user-sex:hover .cy-user-sex-update {
+    display: inline-block;
 }
 
 .module-cy-user-page .module-cy-user-info .cy-user-my {
@@ -363,10 +369,248 @@
     clear: none;
 }
 
+.module-cy-user-page .module-sex {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
 
+.module-cy-user-page .module-sex .sex-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    top: 0;
+    left: 0;
+    display: inline;
+}
 
+.module-cy-user-page .module-sex .first-come {
+    width: 500px;
+    height: 198px;
+    background: url("/static/img/info-update.png") no-repeat;
+    z-index: 10;
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -250px;
+    visibility: hidden;
+}
 
+.module-cy-user-page .module-sex .sex-config {
+    width: 420px;
+    height: 320px;
+    background-color: #fff;
+    margin: -160px auto 0;
+    position: relative;
+    top: 50%;
+    border-radius: 4px;
+}
 
+.module-cy-user-page .module-sex .sex-config .sex-title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    border: 1px solid #bfbfbf;
+    border-width: 0 0 1px;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-am {
+    width: 377px;
+    margin: 24px auto 0;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-also-am .text, .module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-am .text {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-am .select {
+    border: 1px dashed #38a3fd !important;
+    border-radius: 4px;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-am .boy {
+    margin: 0 18px 0 10px;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-am .boy, .module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-am .girl {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 12px;
+    cursor: pointer;
+    border: solid 1px #fff;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-am .boy .icon-boy {
+    background: url("/static/img/boy.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-am .girl .icon-girl {
+    background: url("/static/img/girl.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-am .boy .icon-boy, .module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-am .girl .icon-girl {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: -5px;
+    margin: 0 4px 0 0;
+    font-size: 14px;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-also-am {
+    width: 377px;
+    margin: 10px auto 0;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-also-am .text {
+    line-height: 68px;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-also-am .text, .module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-am .text {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-also-am .icon {
+    display: inline-block;
+    height: 68px;
+    width: 50px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    border: solid 1px #fff;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-man .icon .icon-00 {
+    background: url("/static/img/boy-00.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-also-am .icon .age-icon {
+    display: inline-block;
+    width: 34px;
+    height: 32px;
+    margin: 8px auto 0;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-also-am .icon .icon-text {
+    display: inline-block;
+    margin: 8px auto 0;
+    font-size: 12px;
+    color: #8a8a8a;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .i-also-am .select {
+    border: 1px dashed #38a3fd;
+    border-radius: 4px;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-man .icon .icon-90 {
+    background: url("/static/img/boy-90.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-man .icon .icon-80 {
+    background: url("/static/img/boy-80.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-man .icon .icon-70 {
+    background: url("/static/img/boy-70.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-man .icon .icon-60 {
+    background: url("/static/img/boy-60.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-man .icon .icon-50 {
+    background: url("/static/img/boy-50.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-woman .icon .icon-00 {
+    background: url("/static/img/girl-00.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-woman .icon .icon-90 {
+    background: url("/static/img/girl-90.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-woman .icon .icon-80 {
+    background: url("/static/img/girl-80.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-woman .icon .icon-70 {
+    background: url("/static/img/girl-70.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-woman .icon .icon-60 {
+    background: url("/static/img/girl-60.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .icon-woman .icon .icon-50 {
+    background: url("/static/img/girl-50.png") no-repeat;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .alldown {
+    text-align: center;
+    margin: 40px 0 0;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .alldown .down-button {
+    color: #38a3fd;
+    background-color: #fff;
+    border: 2px solid #38a3fd;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    width: 106px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.module-cy-user-page .module-sex .sex-config .sex-center .sex-select .otherword {
+    margin: 25px 0 0;
+    font-size: 14px;
+    text-align: center;
+    color: #c3c3c3;
+}
+
+.module-cy-user-notice .notice-title {
+    padding-left: 24px;
+    height: 60px;
+    border-bottom: 1px solid #c3cad4;
+    line-height: 60px;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.module-cy-user-notice .notice-info {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.module-cy-user-notice .notice-info .notice-empty {
+    background-image: url("/static/img/notice-empty.png");
+    width: 339px;
+    height: 431px;
+    margin: 145px auto 50px;
+}
 
 .module-cy-user-page .module-cy-user-feedback {
     height: 100%;
