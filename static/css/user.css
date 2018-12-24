@@ -79,6 +79,7 @@
 
 .module-cy-user-page * {
     box-sizing: content-box;
+    color: #333;
 }
 
 .module-cy-user-page .module-cy-user-info .cy-user-info-header .cy-user-info {
@@ -194,6 +195,10 @@
     border-bottom: 1px solid #c3cad4;
 }
 
+.module-cy-user-page .clear-g {
+    zoom: 1;
+}
+
 .module-cy-user-page .module-cy-user-info .cy-user-my .cy-my-label li {
     width: 210px;
     float: left;
@@ -247,8 +252,12 @@
     display: list-item;
 }
 
-.module-cy-user-page .cy-tab-list li.active .cy-my-ico, .module-cy-user-page .cy-tab-list li:hover .cy-tab-icon {
+.module-cy-user-page .cy-tab-list li.active .cy-my-ico, .module-cy-user-page .cy-tab-list li:hover .cy-my-ico {
     background: url("/static/img/tab-list-icon-active1.png");
+}
+
+.module-cy-user-page .cy-tab-list li .cy-my-ico {
+    background: url("/static/img/tab-list-icon1.png");
 }
 
 .module-cy-user-page .cy-tab-list li .cy-tab-icon {
@@ -256,7 +265,6 @@
     height: 22px;
     margin: 0 auto;
     display: block;
-    background: url("/static/img/tab-list-icon1.png");
 }
 
 .module-cy-user-page .cy-tab-list li.active i {
@@ -288,11 +296,31 @@
 }
 
 .module-cy-user-page .cy-tab-list li .cy-tab-icon {
-    width: 22px;
-    height: 22px;
-    margin: 0 auto;
-    display: block;
     background: url("/static/img/task-ico.png");
+}
+
+.module-cy-user-page .cy-tab-list li.active .cy-notice-ico, .module-cy-user-page .cy-tab-list li.notice-li:hover .cy-notice-ico {
+    background: url("/static/img/tab-list-icon-active-notice.png");
+}
+
+.module-cy-user-page .cy-tab-list li .cy-notice-ico {
+    background: url("/static/img/tab-list-notice.png");
+}
+
+.module-cy-user-page .cy-tab-list li.active .cy-feedback-ico, .module-cy-user-page .cy-tab-list li:hover .cy-feedback-ico{
+    background: url("/static/img/tab-list-icon-active5.png") no-repeat;
+}
+
+.module-cy-user-page .cy-tab-list li .cy-feedback-ico {
+    background: url("/static/img/tab-list-icon5.png") no-repeat;
+}
+
+.module-cy-user-page .cy-tab-list li.active .cy-set-ico, .module-cy-user-page .cy-tab-list li:hover .cy-set-ico {
+    background: url("/static/img/set-icon-active.png") no-repeat;
+}
+
+.module-cy-user-page .cy-tab-list li .cy-set-ico {
+    background: url("/static/img/set-icon.png") no-repeat;
 }
 
 .module-cy-user-page .cy-user-page-close-btn {
@@ -312,10 +340,417 @@
     clear: both;
 }
 
+.module-cy-user-page a, .module-cy-user-page abbr, .module-cy-user-page acronym, .module-cy-user-page address, .module-cy-user-page applet, .module-cy-user-page article, .module-cy-user-page aside, .module-cy-user-page audio, .module-cy-user-page b, .module-cy-user-page big, .module-cy-user-page blockquote, .module-cy-user-page canvas, .module-cy-user-page caption, .module-cy-user-page center, .module-cy-user-page cite, .module-cy-user-page code, .module-cy-user-page dd, .module-cy-user-page del, .module-cy-user-page details, .module-cy-user-page dfn, .module-cy-user-page dialog, .module-cy-user-page div, .module-cy-user-page dl, .module-cy-user-page dt, .module-cy-user-page em, .module-cy-user-page embed, .module-cy-user-page fieldset, .module-cy-user-page figcaption, .module-cy-user-page figure, .module-cy-user-page font, .module-cy-user-page footer, .module-cy-user-page form, .module-cy-user-page h1, .module-cy-user-page h2, .module-cy-user-page h3, .module-cy-user-page h4, .module-cy-user-page h5, .module-cy-user-page h6, .module-cy-user-page header, .module-cy-user-page hgroup, .module-cy-user-page hr, .module-cy-user-page i, .module-cy-user-page iframe, .module-cy-user-page img, .module-cy-user-page ins, .module-cy-user-page kbd, .module-cy-user-page label, .module-cy-user-page legend, .module-cy-user-page li, .module-cy-user-page mark, .module-cy-user-page menu, .module-cy-user-page meter, .module-cy-user-page nav, .module-cy-user-page object, .module-cy-user-page ol, .module-cy-user-page output, .module-cy-user-page p, .module-cy-user-page pre, .module-cy-user-page progress, .module-cy-user-page q, .module-cy-user-page rp, .module-cy-user-page rt, .module-cy-user-page ruby, .module-cy-user-page s, .module-cy-user-page samp, .module-cy-user-page section, .module-cy-user-page small, .module-cy-user-page span, .module-cy-user-page strike, .module-cy-user-page strong, .module-cy-user-page sub, .module-cy-user-page summary, .module-cy-user-page sup, .module-cy-user-page table, .module-cy-user-page tbody, .module-cy-user-page td, .module-cy-user-page tfoot, .module-cy-user-page th, .module-cy-user-page thead, .module-cy-user-page time, .module-cy-user-page tr, .module-cy-user-page tt, .module-cy-user-page u, .module-cy-user-page ul, .module-cy-user-page var, .module-cy-user-page video, .module-cy-user-page xmp {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    text-align: left;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0 0;
+    width: auto;
+    float: none;
+    overflow: visible;
+    text-indent: 0;
+}
+
+.module-cy-user-page .clear-g {
+    zoom: 1;
+}
+
+.module-cy-user-page li {
+    clear: none;
+}
 
 
 
 
 
 
+.module-cy-user-page .module-cy-user-feedback {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
 
+.module-cy-user-page .module-cy-user-feedback .main {
+    width: 100%;
+    height: 100%;
+    font-family: "microsoft yahei";
+    position: relative;
+    min-height: 640px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.module-cy-user-page .module-cy-user-feedback .title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 0 0 25px;
+    font-size: 20px;
+    font-family: "microsoft yahei";
+    margin-bottom: -60px;
+}
+
+.module-cy-user-page .module-cy-user-feedback .form {
+    width: 100%;
+    margin: 60px 0 0;
+    border:1px solid #ccc;
+    border-width: 1px 0 0;
+    padding: 40px 0 0 25px;
+}
+
+.module-cy-user-page .module-cy-user-feedback .form .faq {
+    font-size: 16px;
+    font-family: "microsoft yahei";
+}
+
+.module-cy-user-page .module-cy-user-feedback .form .faq-questions {
+    margin: 10px 0 0;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    overflow: hidden;
+}
+
+.module-cy-user-page .module-cy-user-feedback .form .faq-questions .faq-question {
+    float: left;
+    width: 278px;
+    margin: 10px 0 0;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.module-cy-user-page .module-cy-user-feedback .form .faq-questions .faq-question .point {
+    background: url("/static/img/point.png") no-repeat;
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+    margin: 0 6px 0 0;
+}
+
+.module-cy-user-page .module-cy-user-feedback .form .question {
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    margin: 40px 0 0;
+}
+
+.module-cy-user-page .module-cy-user-feedback .form .questionCon {
+    margin-top: 20px;
+    padding: 10px 0 10px 10px;
+    width: 560px;
+    height: 140px;
+    border-radius: 3px;
+    resize: none;
+    font-family: "microsoft yahei";
+    border: solid #ccc 1px;
+    overflow: auto;
+    font-size: 14px;
+    text-align: left;
+    line-height: normal;
+}
+
+.module-cy-user-page .module-cy-user-feedback .link {
+    width: 560px;
+    margin: 40px 0 0;
+    font-family: "microsoft yahei";
+    line-height: 1;
+    background-color: #fff;
+}
+
+.module-cy-user-page .module-cy-user-feedback .link .phone {
+    font-size: 16px;
+}
+
+.module-cy-user-page .module-cy-user-feedback .link .select {
+    float: right;
+    color: #ccc;
+}
+
+.module-cy-user-page .module-cy-user-feedback .link .text {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    margin: 20px 0 0;
+    padding-left: 10px;
+    border: solid #ccc 1px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: microsoft yahei;
+}
+
+.module-cy-user-page .module-cy-user-feedback .photo {
+    width: 560px;
+    margin: 40px 0 0;
+    font-family: "microsoft yahei";
+    line-height: 1;
+    background-color: #fff;
+}
+
+.module-cy-user-page .module-cy-user-feedback .photo .add-img {
+    font-size: 16px;
+}
+
+.module-cy-user-page .module-cy-user-feedback .photo .select {
+    float: right;
+    color: #ccc;
+}
+
+.module-cy-user-page .module-cy-user-feedback .photo .img-container {
+    margin-top: 20px;
+}
+
+.module-cy-user-page .module-cy-user-feedback .photo .upload-img {
+    background: url("/static/img/add-img.png") no-repeat;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.module-cy-user-page .module-cy-user-feedback .photo .img-upload-tip {
+    line-height: 28px;
+    height: 28px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.module-cy-user-page .module-cy-user-feedback .tip {
+    height: 36px;
+    line-height: 36px;
+    background-color: #e9eef1;
+    font-size: 14px;
+    bottom: 70px;
+}
+
+.module-cy-user-page .module-cy-user-feedback .tip .ok {
+    width: 14px;
+    height: 14px;
+    background: url("/static/img/ok.png") no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+.module-cy-user-page .module-cy-user-feedback .tip .tipText {
+    margin: 0 10px 0 0;
+}
+
+.module-cy-user-page .module-cy-user-feedback .button {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    bottom: 0;
+    border: 1px solid #ccc;
+    border-width: 1px 0 0;
+    padding: 0 0 0 25px;
+}
+
+.module-cy-user-page .module-cy-user-feedback .button .confirm {
+    width: 84px;
+    height: 32px;
+    line-height: 32px;
+    color: #51acf9;
+    background: url("/static/img/btn.png") no-repeat;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    margin: 9px 0 0;
+}
+
+.module-cy-user-page .module-cy-user-set {
+    font-family: "PingFang SC",Arial,"\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",simsun,sans-serif;
+}
+
+.module-cy-user-page .module-cy-user-set {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.module-cy-user-page .module-cy-user-set .set-header-s {
+    width: 100%;
+    height: 60px;
+    padding: 0 0 0 25px;
+    font-family: "microsoft yahei";
+    margin-bottom: 32px;
+    border-bottom: 1px solid #c3cad4;
+}
+
+.module-cy-user-page .module-cy-user-set .set-header-s .set-logout-s {
+    float: right;
+    margin: 21px 35px 0 0;
+    line-height: 18px;
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+}
+
+.module-cy-user-page .module-cy-user-set .set-header-s .set-logout-s .logout-ico {
+    width: 15px;
+    height: 18px;
+    float: left;
+    margin-right: 7px;
+    background: url("/static/img/logout.png") no-repeat;
+}
+
+.module-cy-user-page .module-cy-user-set .set-header-s .set-title-s {
+    display: inline;
+    line-height: 60px;
+    font-size: 20px;
+    color: #111;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s {
+    box-sizing: border-box;
+    padding-left: 24px;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .set-remind {
+    width: 160px;
+    text-align: left;
+    margin: 10px 0 25px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.module-cy-user-page p {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .setlists {
+    overflow: hidden;
+    margin-bottom: 64px;
+}
+
+.module-cy-user-page li, .module-cy-user-page ol, .module-cy-user-page ul {
+    list-style: none;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .setlists .setlist {
+    line-height: 36px!important;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .setlists .setlist {
+    cursor: default;
+    user-select: none;
+}
+
+.module-cy-user-page li {
+    clear: none;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .setlists .setlist .cy-set-tag {
+    display: inline-block;
+    font-size: 14px;
+    width: 110px;
+    text-align: right;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .setlists .setlist .cy-switch.cy-checked {
+    background-color: #51acf9;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .setlists .setlist .cy-switch {
+    background-color: rgba(0,0,0,.25);
+    border: 1px solid transparent;
+    border-radius: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    line-height: 16px;
+    margin-left: 24px;
+    width: 35px;
+    position: relative;
+    transition: all .36s;
+    user-select: none;
+    vertical-align: middle;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .setlists .setlist .cy-switch.cy-checked:after {
+    left: 100%;
+    margin-left: -17px;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .setlists .setlist .cy-switch:after {
+    background-color: #fff;
+    border-radius: 8px;
+    content: " ";
+    cursor: pointer;
+    height: 16px;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    transition: all .36s cubic-bezier(.78,.14,.15,.86);
+    width: 16px;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .set-remind {
+    width: 160px;
+    text-align: left;
+    margin: 10px 0 25px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.module-cy-user-page p {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .set-phone-done, .module-cy-user-page .module-cy-user-set .set-container-s .set-phone-no {
+    display: block;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .set-phone-text {
+    color: #210000;
+    cursor: default;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .set-phone-btn {
+    color: #51acf9;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 0 8px;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .set-phone-hint {
+    background: #f6fbff;
+    border: 1px solid #d4eafe;
+    border-radius: 3px;
+    color: #8e9192;
+    display: block;
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 16px;
+    text-align: left;
+    text-indent: 18px;
+}
+
+.module-cy-user-page .module-cy-user-set .set-container-s .set-phone-hint em {
+    color: #83c5fb;
+}
+
+.module-cy-user-page em, .module-cy-user-page i {
+    font-style: normal;
+}

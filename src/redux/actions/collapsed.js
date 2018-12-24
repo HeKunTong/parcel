@@ -22,7 +22,8 @@ const hide = () => (dispatch) => {
 
 export default {
     toggle,
-    show
+    show,
+    hide
 };
 
 export const handlers = {

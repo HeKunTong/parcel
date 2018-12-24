@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Left, Footer, User } from './components';
-import { ArticleDetail, Home, Test } from './page';
+import { ArticleDetail, Home } from './page';
 import { connect } from 'react-redux';
 
 class App extends Component {
@@ -32,7 +32,6 @@ class App extends Component {
                                     <div id="js-content" className="content-ll">
                                         <Route exact path="/" component={Home} />
                                         <Route exact path="/article/:id(\d+)" component={ArticleDetail} />
-                                        <Route exact path="/test" component={Test} />
                                     </div>
                                 </div>
                             </div>
